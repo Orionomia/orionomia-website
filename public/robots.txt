@@ -1,0 +1,60 @@
+# ==========================================
+# ORIONOMIA - robots.txt
+# https://orionomia.pl
+# Zgodne z sitemap.xml, menu i polityką SEO
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Pozwól na zasoby publiczne
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.svg$
+Allow: /*.png$
+Allow: /*.jpg$
+
+# Sitemap - wskazuje główną domenę (.pl)
+Sitemap: https://orionomia.pl/sitemap-index.xml
+
+# Crawl-delay dla mniej agresywnych botów
+Crawl-delay: 1
+
+# ==============================
+# Specyficzne ustawienia dla popularnych botów
+# ==============================
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ==============================
+# Blokuj złośliwe boty / crawlery
+# ==============================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /

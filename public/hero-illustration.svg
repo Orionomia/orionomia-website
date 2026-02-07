@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Pattern - 3x3 siatka rombów -->
+    <pattern id="diamondTiles" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+      <!-- Rząd 1 -->
+      <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="#66D9D9"/>
+      <path d="M60 0 L80 20 L60 40 L40 20 Z" fill="#66D9D9"/>
+      <path d="M100 0 L120 20 L100 40 L80 20 Z" fill="#0A192F">
+        <animate attributeName="fill" values="#0A192F;#66D9D9;#0A192F" dur="4s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Rząd 2 -->
+      <path d="M20 40 L40 60 L20 80 L0 60 Z" fill="#66D9D9"/>
+      <path d="M60 40 L80 60 L60 80 L40 60 Z" fill="#0A192F">
+        <animate attributeName="fill" values="#0A192F;#66D9D9;#0A192F" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M100 40 L120 60 L100 80 L80 60 Z" fill="#66D9D9"/>
+      
+      <!-- Rząd 3 -->
+      <path d="M20 80 L40 100 L20 120 L0 100 Z" fill="#0A192F">
+        <animate attributeName="fill" values="#0A192F;#66D9D9;#0A192F" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M60 80 L80 100 L60 120 L40 100 Z" fill="#66D9D9"/>
+      <path d="M100 80 L120 100 L100 120 L80 100 Z" fill="#66D9D9"/>
+    </pattern>
+  </defs>
+  
+  <!-- Pattern tylko na prawej połowie -->
+  <rect x="400" y="0" width="400" height="640" fill="url(#diamondTiles)"/>
+</svg>

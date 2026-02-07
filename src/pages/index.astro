@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Orionomia | Digital infrastructure for scholarly publishing">
+  <Navigation />
+  <Hero />
+  
+  <main class="container">
+    <section id="orionum" class="orionum-intro">
+      <h2 class="orionum-title">Czym jest ORIONUM?</h2>
+      <p class="orionum-description">
+        ORIONUM to system standardów Orionomii, który gwarantuje sprawne funkcjonowanie czasopism w OJS, chroni zasoby i zapewnia prawidłową widoczność publikacji w międzynarodowych bazach naukowych.
+      </p>
+    </section>
+    
+    <section id="platformy" class="card-row">
+      <Card 
+        symbol="◆"
+        category="INFRASTRUKTURA"
+        title="ORIONUM::CORE"
+        subtitle="Bezpieczne archiwum"
+        description="Odpowiada za ochronę plików publikacji, wykonuje kopie zapasowe i wdraża procedury awaryjne, gwarantując kompletność danych oraz ich dostępność w każdej sytuacji technicznej."
+        buttonText="Sprawdź CORE"
+        buttonLink="#"
+      />
+      
+      <Card 
+        symbol="◆◆"
+        category="PLATFORMA"
+        title="ORIONUM::ENGINE"
+        subtitle="Workflow redakcyjny"
+        description="Standaryzuje działania w OJS, określa role, etapy oraz metadane artykułów, dzięki czemu publikacje przechodzą przez proces redakcyjny sprawnie, terminowo i zgodnie z wymogami wydawnictw naukowych."
+        buttonText="Sprawdź ENGINE"
+        buttonLink="#"
+      />
+      
+      <Card 
+        symbol="◆◆◆"
+        category="INTEGRACJA"
+        title="ORIONUM::SIGNAL"
+        subtitle="Widoczność publikacji"
+        description="Przygotowuje czasopisma do współpracy z bazami indeksacyjnymi i rejestrami identyfikatorów, umożliwiając poprawne wyświetlanie artykułów, ich rozpoznawalność oraz dostępność w globalnym obiegu naukowym."
+        buttonText="Sprawdź SIGNAL"
+        buttonLink="#"
+      />
+    </section>
+
+    <section class="cta-section">
+      <h2 class="cta-title">Sprawdź zgodność swojego czasopisma z ORIONUM</h2>
+      <p class="cta-description">
+        Porównaj działanie swojego tytułu z wymaganiami CORE, ENGINE i SIGNAL, aby upewnić się, że zasoby są zabezpieczone, procesy uporządkowane, a publikacje gotowe do międzynarodowej indeksacji.
+      </p>
+      <a href="mailto:orionomia@gmail.com" class="cta-button">Zweryfikuj czasopismo</a>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

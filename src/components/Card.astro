@@ -1,0 +1,24 @@
+---
+interface Props {
+  symbol: string;
+  category: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+}
+
+const { symbol, category, title, subtitle, description, buttonText, buttonLink } = Astro.props;
+---
+
+<article class="card">
+  <div class="card-symbol">{symbol}</div>
+  <p class="card-category">{category}</p>
+  <h2 class="card-title">{title}</h2>
+  <h3 class="card-subtitle">{subtitle}</h3>
+  <p class="card-text">{description}</p>
+  <div class="card-link-wrapper">
+    <a href={buttonLink} class="card-link">{buttonText}</a>
+  </div>
+</article>
