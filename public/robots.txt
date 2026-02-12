@@ -6,17 +6,10 @@
 User-agent: *
 Allow: /
 
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.svg$
-Allow: /*.png$
-Allow: /*.jpg$
-
 Sitemap: https://orionomia.pl/sitemap-index.xml
 
 Crawl-delay: 1
 
-# Google
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
@@ -24,12 +17,10 @@ Crawl-delay: 0
 User-agent: Googlebot-Image
 Allow: /
 
-# Bing
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# Blokuj złośliwe boty
 User-agent: AhrefsBot
 Disallow: /
 
