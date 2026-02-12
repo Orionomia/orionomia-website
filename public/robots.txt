@@ -3,45 +3,33 @@
 # https://orionomia.pl
 # ==========================================
 
-# Dostęp dla wszystkich robotów
 User-agent: *
 Allow: /
 
-# Zasoby publiczne (CSS, JS, grafiki)
 Allow: /*.css$
 Allow: /*.js$
 Allow: /*.svg$
 Allow: /*.png$
 Allow: /*.jpg$
 
-# Sitemap
 Sitemap: https://orionomia.pl/sitemap-index.xml
 
-# ==========================================
-# Blokada botów AI / modeli treningowych
-# ==========================================
-User-agent: GPTBot
-Disallow: /
+Crawl-delay: 1
 
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-# ==========================================
-# Specyficzne ustawienia robotów wyszukiwarek
-# ==========================================
+# Google
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-# ==========================================
-# Blokada narzędzi SEO / crawlerów komercyjnych
-# ==========================================
+# Blokuj złośliwe boty
 User-agent: AhrefsBot
 Disallow: /
 
@@ -52,4 +40,10 @@ User-agent: MJ12bot
 Disallow: /
 
 User-agent: DotBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
 Disallow: /
